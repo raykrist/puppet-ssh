@@ -36,5 +36,6 @@ $value=''
   augeas {"Set ${name} in /etc/ssh/sshd_config":
     context => '/files/etc/ssh/sshd_config',
     changes => $changes,
+    notify  => Service['ssh']
   }
 }
