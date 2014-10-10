@@ -34,7 +34,7 @@ $value=''
   }
 
   augeas {"Set ${name} in /etc/ssh/ssh_config":
-    context => '/files/etc/ssh/ssh_config',
+    context => '/files/etc/ssh/ssh_config/Host',
     changes => $changes,
   }
 }
